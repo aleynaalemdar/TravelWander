@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 import javax.swing.*;
 
-import com.mysql.cj.xdevapi.Statement;
+// import com.mysql.cj.xdevapi.Statement;
 
 public class ortaklar extends JFrame {
   public static void main(String[] args) {

@@ -124,7 +124,7 @@ public class Sehirler extends JFrame implements Runnable {
         String[] text = new String[6];
    
         try {
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "24052003As");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "aleyna162538");
             Statement statement = ((java.sql.Connection) con).createStatement();
             ResultSet resultSet = statement.executeQuery("SELECT * FROM worldwander.city;");
 

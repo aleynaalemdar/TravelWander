@@ -20,7 +20,7 @@ public class Facts extends JFrame {
         int id=fact.getId();
         String[] funfact1 = new String[3];
         try {
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "24052003As");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "aleyna162538");
             Statement statement = ((java.sql.Connection) con).createStatement();
             ResultSet resultSet = statement.executeQuery("SELECT * FROM worldwander.facts where city_id ="+id+";");
 

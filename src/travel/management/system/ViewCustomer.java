@@ -14,7 +14,7 @@ public class ViewCustomer extends JFrame implements ActionListener {
     ViewCustomer() {
         setLayout(null);
         getContentPane().setBackground(Color.gray);
-        setBounds(300, 900, 700, 690);
+        setBounds(400, 120, 770, 690);
 
         JLabel lblName = new JLabel("Enter Username:");
         lblName.setBounds(30, 30, 150, 25);
@@ -116,7 +116,7 @@ public class ViewCustomer extends JFrame implements ActionListener {
                 JOptionPane.showMessageDialog(this, "Please enter a customer username.");
             } else {
                 try {
-                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "24052003As");
+                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "aleyna162538");
                     Statement statement = con.createStatement();
                     String query = "SELECT * FROM customer WHERE username = '" + customeruserName + "'";
                     ResultSet rs = statement.executeQuery(query);

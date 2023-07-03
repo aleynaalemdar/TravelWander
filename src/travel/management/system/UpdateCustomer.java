@@ -24,7 +24,7 @@ public class UpdateCustomer extends JFrame implements ActionListener {
 
         setLayout(null);
         getContentPane().setBackground(Color.gray);
-        setBounds(300, 200, 820, 450);
+        setBounds(350, 250, 820, 450);
 
         JLabel text = new JLabel("UPDATE CUSTOMER DETAILS");
         text.setFont(new Font("Tahoma", Font.BOLD, 22));
@@ -119,7 +119,7 @@ public class UpdateCustomer extends JFrame implements ActionListener {
         add(back);
 
         try {
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "24052003As");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "aleyna162538");
             Statement statement = con.createStatement(); 
             ResultSet rs = statement.executeQuery("select * from customer where username = '" + username + "'");
             while (rs.next()) {
@@ -156,7 +156,7 @@ public class UpdateCustomer extends JFrame implements ActionListener {
             String gender = tfgender.getText();
 
             try {
-                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "24052003As");
+                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "aleyna162538");
                 Statement statement = con.createStatement(); // Create Statement object
                 String checkUsernameQuery = "SELECT * FROM customer WHERE username = '" + oldUsername + "'";
                 ResultSet rs = statement.executeQuery(checkUsernameQuery);

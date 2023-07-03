@@ -26,7 +26,7 @@ public class newPage extends JFrame {
 
         initializeBackButton();
         
-        setBounds(300, 80, 600, 630);
+        setBounds(350, 170, 600, 630);
 
         JPanel mainPanel = new JPanel();
         mainPanel.setLayout(new BorderLayout());
@@ -134,7 +134,7 @@ public class newPage extends JFrame {
 
             try {
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "24052003As");
+                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "aleyna162538");
                 Statement stmt = con.createStatement();
                 ResultSet rs = stmt.executeQuery(queries[i]);
 
@@ -182,13 +182,15 @@ public class newPage extends JFrame {
         add(mainPanel);
         setVisible(true);
 
+// Text alanını en üst konuma getir
+textArea.setCaretPosition(0);
    
         nextPageButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
              new PageViewer();
 
             
-                setVisible(false);
+              setVisible(false);
             }
 
       

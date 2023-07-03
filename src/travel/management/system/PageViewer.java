@@ -15,7 +15,7 @@ public class PageViewer extends JFrame {
     }
 
     public PageViewer() {
-        setBounds(300, 80, 600, 630);
+        setBounds(350, 170, 600, 630);
         setTitle("Famous People Coming to Activities");
 
         String[] activitesname = new String[30];
@@ -26,7 +26,7 @@ public class PageViewer extends JFrame {
                 "LIMIT 30";
 
         try {
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "24052003As");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "aleyna162538");
             Statement statement = con.createStatement();
             ResultSet resultSet = statement.executeQuery(query);
             int i = 0;
@@ -74,6 +74,8 @@ public class PageViewer extends JFrame {
         
         textArea.setText(paragraphText.toString());
 
+// Text alanını en üst konuma getir
+textArea.setCaretPosition(0);
     
         previousPageButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {

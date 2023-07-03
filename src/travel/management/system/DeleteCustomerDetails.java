@@ -47,7 +47,7 @@ public class DeleteCustomerDetails extends JFrame implements ActionListener {
         this.username = username;
         setLayout(null);
         getContentPane().setBackground(Color.gray);
-        setBounds(300, 200, 850, 650);
+        setBounds(400, 170, 830, 620);
 
         JLabel lblusername = new JLabel("Username:");
         lblusername.setForeground(Color.BLACK);
@@ -178,7 +178,7 @@ public class DeleteCustomerDetails extends JFrame implements ActionListener {
 
 
         try {
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "24052003As");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "aleyna162538");
             Statement statement = con.createStatement();
             String query = "select * from customer where username = '" + username + "' ";
             ResultSet rs = statement.executeQuery(query);
@@ -212,7 +212,7 @@ public class DeleteCustomerDetails extends JFrame implements ActionListener {
                 String gender = male.isSelected() ? "Male" : "Female";
                 
             try {
-                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "24052003As");
+                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "aleyna162538");
                 Statement statement = con.createStatement(); // Create Statement object
                 String selectQuery = "SELECT * FROM customer WHERE username = '" + username + "' AND name = '" + name + "' AND gender = '" + gender + "' AND number = '" + number + "' AND email = '" + email + "'";
                 ResultSet rs = statement.executeQuery(selectQuery);

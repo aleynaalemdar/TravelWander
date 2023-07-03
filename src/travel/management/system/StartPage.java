@@ -97,7 +97,7 @@ public class StartPage extends JFrame implements ActionListener {
         button2.setFont(new Font("Tahoma", Font.PLAIN, 20));
         button2.setMargin( new Insets(0,0,0,0));
         button2.addActionListener(e -> {
-         setVisible(false);
+        // setVisible(false);
           new newPage();
         });
         p2.add(button2);
@@ -110,7 +110,7 @@ public class StartPage extends JFrame implements ActionListener {
         NewLabel.setBounds(250, 50, 1250, 750);
         add(NewLabel);
 
-        JLabel showname = new JLabel("Journey beyond the beaten path with TravelWander! "+username+"");
+        JLabel showname = new JLabel("Journey beyond the beaten path with TravelWander! ");
         showname.setBounds(555 , 30 , 550 , 45);
         showname.setForeground(Color.black);
         showname.setFont(new Font("Yu Gothic UI Semibold", Font.PLAIN, 20));
