@@ -19,7 +19,7 @@ public class Food extends JFrame {
         String[] fooods = new String[3];
         String[] imagess = new String[3];
         try {
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "aleyna162538");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "");
             Statement statement = ((java.sql.Connection) con).createStatement();
             ResultSet resultSet = statement.executeQuery("SELECT * FROM worldwander.foods where city_id ="+id+";");
 

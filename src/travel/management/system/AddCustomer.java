@@ -153,7 +153,7 @@ public class AddCustomer extends JFrame implements ActionListener {
                    
 
             try {
-                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "aleyna162538");
+                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "");
                 Statement statement = con.createStatement();
                 String query = "insert into customer values('" + username + "',  '" + name + "',  '" + gender + "',  '" + country + "',  '" + number + "'  , '" + email + "'  )";
                 statement.executeUpdate(query);
@@ -167,7 +167,7 @@ public class AddCustomer extends JFrame implements ActionListener {
         else if (ae.getSource() == addAgeButton) {
             if (!ageColumnAdded) {
                 try {
-                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "aleyna162538");
+                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "");
                     Statement statement = con.createStatement();
                     String query = "ALTER TABLE worldwander.customer ADD age INT";
                     statement.executeUpdate(query);
@@ -182,7 +182,7 @@ public class AddCustomer extends JFrame implements ActionListener {
         } else if (ae.getSource() == dropAgeButton) {
             if (ageColumnAdded) {
                 try {
-                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "aleyna162538");
+                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "");
                     Statement statement = con.createStatement();
                     String query = "ALTER TABLE worldwander.customer DROP COLUMN age;";
                     statement.executeUpdate(query);

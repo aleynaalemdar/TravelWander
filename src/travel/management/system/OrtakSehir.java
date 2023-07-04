@@ -50,7 +50,7 @@ public class OrtakSehir extends JFrame {
 
     public void OrtakYemeklerPanel() {
         try {
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "aleyna162538");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "");
             java.sql.Statement statement = con.createStatement();
             ResultSet resultSet = statement.executeQuery(sqlQuery);
 

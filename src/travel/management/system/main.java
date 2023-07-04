@@ -46,7 +46,7 @@ public class main {
 	            "    SELECT city_id FROM city WHERE city_name = 'Izmir'\n" +
 	            ");";
 	    try {
-	        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "aleyna162538");
+	        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "");
 	        java.sql.Statement statement = con.createStatement();
 
 

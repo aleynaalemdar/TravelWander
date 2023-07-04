@@ -65,7 +65,7 @@ public class Event extends JFrame {
         }
 
         try {
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "aleyna162538");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "");
             PreparedStatement statement = con.prepareStatement("SELECT MONTH(activites_date) AS event_month, activites_name, city_id FROM worldwander.activites WHERE MONTH(activites_date) = ? AND city_id = ?");
             statement.setInt(1, mon + 1);
             statement.setInt(2, id);

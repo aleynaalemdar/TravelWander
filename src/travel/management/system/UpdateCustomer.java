@@ -119,7 +119,7 @@ public class UpdateCustomer extends JFrame implements ActionListener {
         add(back);
 
         try {
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "aleyna162538");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "");
             Statement statement = con.createStatement(); 
             ResultSet rs = statement.executeQuery("select * from customer where username = '" + username + "'");
             while (rs.next()) {
@@ -156,7 +156,7 @@ public class UpdateCustomer extends JFrame implements ActionListener {
             String gender = tfgender.getText();
 
             try {
-                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "aleyna162538");
+                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "");
                 Statement statement = con.createStatement(); // Create Statement object
                 String checkUsernameQuery = "SELECT * FROM customer WHERE username = '" + oldUsername + "'";
                 ResultSet rs = statement.executeQuery(checkUsernameQuery);

@@ -116,7 +116,7 @@ public class ViewCustomer extends JFrame implements ActionListener {
                 JOptionPane.showMessageDialog(this, "Please enter a customer username.");
             } else {
                 try {
-                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "aleyna162538");
+                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "");
                     Statement statement = con.createStatement();
                     String query = "SELECT * FROM customer WHERE username = '" + customeruserName + "'";
                     ResultSet rs = statement.executeQuery(query);

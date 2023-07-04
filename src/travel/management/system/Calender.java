@@ -65,7 +65,7 @@ public class Calender extends JFrame {
         int mon = getMonthIndex(selectedMonth);
 
         try {
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "aleyna162538");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "");
             PreparedStatement statement = con.prepareStatement("SELECT COUNT(*) AS activity_count FROM worldwander.activites WHERE MONTH(activites_date) = ? AND city_id = ?");
             statement.setInt(1, mon + 1);
             statement.setInt(2, cityId);

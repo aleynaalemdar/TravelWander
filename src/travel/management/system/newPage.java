@@ -134,7 +134,7 @@ public class newPage extends JFrame {
 
             try {
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "aleyna162538");
+                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "");
                 Statement stmt = con.createStatement();
                 ResultSet rs = stmt.executeQuery(queries[i]);
 

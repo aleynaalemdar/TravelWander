@@ -28,7 +28,7 @@ public class GezilecekYerler extends JFrame {
         List<String> imagePaths = new ArrayList<>();
 
         try {
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "aleyna162538");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "");
             Statement statement = con.createStatement();
             ResultSet resultSet = statement.executeQuery("SELECT * FROM worldwander.places_to_visit WHERE city_id = " + id + ";");
 

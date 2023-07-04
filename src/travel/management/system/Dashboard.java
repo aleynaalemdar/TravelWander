@@ -40,7 +40,7 @@ public class Dashboard extends JFrame implements ActionListener {
         add(p1);
 
         try {
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "aleyna162538");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "");
             Statement statement = ((java.sql.Connection) con).createStatement();
             ResultSet resultSet = statement.executeQuery("SELECT * FROM worldwander.city where city_id ="+id+";");
 

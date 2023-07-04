@@ -26,7 +26,7 @@ public class PageViewer extends JFrame {
                 "LIMIT 30";
 
         try {
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "aleyna162538");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/worldwander", "root", "");
             Statement statement = con.createStatement();
             ResultSet resultSet = statement.executeQuery(query);
             int i = 0;
