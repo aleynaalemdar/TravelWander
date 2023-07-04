@@ -10,7 +10,9 @@ Our project demonstrates the seamless integration of data from the MySQL databas
 
 We spent a month developing this project and enjoyed gaining extensive knowledge throughout the process.
 
-We also made a trailer video for our app. You can watch it from down below.
+## Video
+
+Here is the trailer video of our app. You can watch it from down below.
 
 
 [![TravelWander](https://snipboard.io/xrCRS8.jpg)](https://www.youtube.com/watch?v=_SCdW6YVOs4)
