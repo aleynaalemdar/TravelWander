@@ -14,10 +14,7 @@ Here are the photos of this project:
 ????? put put
 
 We also made a trailer video for our app. You can watch it from down below.
-
-![TravelWander](https://snipboard.io/olGXbR.jpg)
-
-[![TravelWander]([https://snipboard.io/olGXbR.jpg))](https://www.youtube.com/watch?v=_SCdW6YVOs4)
+[![TravelWander](https://snipboard.io/olGXbR.jpg)](https://www.youtube.com/watch?v=_SCdW6YVOs4)
 
 
 
